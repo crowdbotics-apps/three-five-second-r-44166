@@ -24,15 +24,15 @@ const ProfileScreen = () => {
     setEditMode(false);
   };
 
-  return <SafeAreaView style={_styles.bvfiwHVf}>
+  return <SafeAreaView style={_styles.HqfOMMpo}>
       <ScrollView>
-        <View style={_styles.DTZNXznb}>
-          <Image style={_styles.iTQYJAPg} source={{
+        <View style={_styles.WHuyTfrR}>
+          <Image style={_styles.mecLLtrb} source={{
           uri: 'https://tinyurl.com/42evm3m3'
         }} />
           {isEditMode ? <Button title="Change Photo" onPress={() => {}} /> : null}
         </View>
-        <View style={_styles.bZvoovnX}>
+        <View style={_styles.euCANIeK}>
           {isEditMode ? <TextInput value={name} onChangeText={setName} placeholder="Name" /> : <Text>{name}</Text>}
           {isEditMode ? <TextInput value={username} onChangeText={setUsername} placeholder="Username" /> : <Text>{username}</Text>}
           {isEditMode ? <TextInput value={email} onChangeText={setEmail} placeholder="Email" /> : <Text>{email}</Text>}
@@ -67,7 +67,7 @@ const ProfileScreen = () => {
               <Text>{address.state}</Text>
               <Text>{address.country}</Text>
             </View>}
-          <View style={_styles.qJdDWNmU}>
+          <View style={_styles.HQfzEfXC}>
             {isEditMode ? <Button title="Save" onPress={handleSave} /> : <Button title="Edit" onPress={() => setEditMode(true)} />}
           </View>
         </View>
@@ -78,23 +78,23 @@ const ProfileScreen = () => {
 export default ProfileScreen;
 
 const _styles = StyleSheet.create({
-  bvfiwHVf: {
+  HqfOMMpo: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  DTZNXznb: {
+  WHuyTfrR: {
     alignItems: "center",
     padding: 20
   },
-  iTQYJAPg: {
+  mecLLtrb: {
     width: 100,
     height: 100,
     borderRadius: 50
   },
-  bZvoovnX: {
+  euCANIeK: {
     padding: 20
   },
-  qJdDWNmU: {
+  HQfzEfXC: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 20
