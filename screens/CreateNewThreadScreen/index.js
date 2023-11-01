@@ -8,33 +8,33 @@ const ScreenComponent = () => {
   const [type, setType] = useState('');
   const [category, setCategory] = useState('');
   const [user, setUser] = useState('');
-  return <SafeAreaView style={_styles.hzRfoEGe}>
-      <ScrollView style={_styles.MUvmeOMA}>
+  return <SafeAreaView style={_styles.vjygULvi}>
+      <ScrollView style={_styles.rXRfVhsu}>
         <Text>Title</Text>
-        <TextInput style={_styles.qdpLRTwM} onChangeText={text => setTitle(text)} value={title} />
+        <TextInput style={_styles.msVLNQpk} onChangeText={text => setTitle(text)} value={title} />
 
         <Text>Picture</Text>
-        <Image style={_styles.NEHfRHuZ} source={{
+        <Image style={_styles.AySyIsVQ} source={{
         uri: 'https://tinyurl.com/42evm3m3'
       }} />
 
         <Text>Type</Text>
-        <Picker selectedValue={type} style={_styles.ucvzmMxx} onValueChange={(itemValue, itemIndex) => setType(itemValue)}>
+        <Picker selectedValue={type} style={_styles.pbSQjfRl} onValueChange={(itemValue, itemIndex) => setType(itemValue)}>
           <Picker.Item label="Type 1" value="type1" />
           <Picker.Item label="Type 2" value="type2" />
         </Picker>
 
         <Text>Category</Text>
-        <Picker selectedValue={category} style={_styles.GnPQTfbB} onValueChange={(itemValue, itemIndex) => setCategory(itemValue)}>
+        <Picker selectedValue={category} style={_styles.mkQapsYb} onValueChange={(itemValue, itemIndex) => setCategory(itemValue)}>
           <Picker.Item label="Category 1" value="cat1" />
           <Picker.Item label="Category 2" value="cat2" />
         </Picker>
 
         <Text>Description</Text>
-        <TextInput style={_styles.kFHrYUxL} onChangeText={text => setDescription(text)} value={description} />
+        <TextInput style={_styles.fMguBbAL} onChangeText={text => setDescription(text)} value={description} />
 
         <Text>Invite new members</Text>
-        <TextInput style={_styles.mOEikMTN} onChangeText={text => setUser(text)} value={user} />
+        <TextInput style={_styles.nTmPUFHP} onChangeText={text => setUser(text)} value={user} />
         <Button title="Invite" onPress={() => alert('User invited')} />
       </ScrollView>
     </SafeAreaView>;
@@ -43,41 +43,41 @@ const ScreenComponent = () => {
 export default ScreenComponent;
 
 const _styles = StyleSheet.create({
-  hzRfoEGe: {
+  vjygULvi: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  MUvmeOMA: {
+  rXRfVhsu: {
     padding: 20
   },
-  qdpLRTwM: {
+  msVLNQpk: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  NEHfRHuZ: {
+  AySyIsVQ: {
     width: "100%",
     height: 200,
     marginBottom: 20
   },
-  ucvzmMxx: {
+  pbSQjfRl: {
     height: 50,
     width: "100%",
     marginBottom: 20
   },
-  GnPQTfbB: {
+  mkQapsYb: {
     height: 50,
     width: "100%",
     marginBottom: 20
   },
-  kFHrYUxL: {
+  fMguBbAL: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
     marginBottom: 20
   },
-  mOEikMTN: {
+  nTmPUFHP: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
