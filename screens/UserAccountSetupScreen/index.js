@@ -10,9 +10,9 @@ const App = () => {
   const regions = ['Region 1', 'Region 2', 'Region 3'];
   const bases = ['Base 1', 'Base 2', 'Base 3'];
   const reasons = ['Reason 1', 'Reason 2', 'Reason 3'];
-  return <SafeAreaView style={_styles.wwveFXrt}>
-      <ScrollView style={_styles.ajUPjBpX}>
-        <Text style={_styles.whkioNsL}>Tricare Region for Insurance Coverage</Text>
+  return <SafeAreaView style={_styles.tjHlvdzk}>
+      <ScrollView style={_styles.UBZBqdqv}>
+        <Text style={_styles.edBVEBOs}>Tricare Region for Insurance Coverage</Text>
 
         <Text>Select your Tricare region:</Text>
         <Picker selectedValue={region} onValueChange={itemValue => setRegion(itemValue)}>
@@ -30,12 +30,12 @@ const App = () => {
         </Picker>
 
         <Text>Search for your physician:</Text>
-        <TextInput style={_styles.oYxjPfda} onChangeText={text => setPhysician(text)} value={physician} />
+        <TextInput style={_styles.kEIQmWlD} onChangeText={text => setPhysician(text)} value={physician} />
 
-        <View style={_styles.eXkxivpI}>
+        <View style={_styles.hZjBpJlc}>
           <Image source={{
           uri: 'https://tinyurl.com/42evm3m3'
-        }} style={_styles.PQJgLIkX} />
+        }} style={_styles.XqvJrfuT} />
           <View>
             <Text>{physician}</Text>
             <Text>email@example.com</Text>
@@ -50,29 +50,29 @@ const App = () => {
 export default App;
 
 const _styles = StyleSheet.create({
-  wwveFXrt: {
+  tjHlvdzk: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  ajUPjBpX: {
+  UBZBqdqv: {
     padding: 20
   },
-  whkioNsL: {
+  edBVEBOs: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20
   },
-  oYxjPfda: {
+  kEIQmWlD: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1
   },
-  eXkxivpI: {
+  hZjBpJlc: {
     flexDirection: "row",
     alignItems: "center",
     marginTop: 20
   },
-  PQJgLIkX: {
+  XqvJrfuT: {
     width: 50,
     height: 50,
     marginRight: 10
