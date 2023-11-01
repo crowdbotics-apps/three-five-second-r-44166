@@ -41,27 +41,27 @@ const GroupScreen = () => {
     }]);
   };
 
-  return <SafeAreaView style={_styles.uSDTIglc}>
-      <View style={_styles.vwkjcBdQ}>
-        <Text style={_styles.zQXDPwWM}>{title}</Text>
+  return <SafeAreaView style={_styles.tZnXNMgK}>
+      <View style={_styles.dTxDHYvH}>
+        <Text style={_styles.NskGqDSz}>{title}</Text>
         <Image source={{
         uri: 'https://tinyurl.com/42evm3m3'
-      }} style={_styles.ASOgXBBf} />
-        <Text style={_styles.HJecRFug}>{category}</Text>
-        <Text style={_styles.oqUgdBSf}>{description}</Text>
+      }} style={_styles.lVBclsZK} />
+        <Text style={_styles.apQAoqoB}>{category}</Text>
+        <Text style={_styles.vHfBTCjd}>{description}</Text>
         <FlatList data={members} keyExtractor={item => item.id} renderItem={({
         item
-      }) => <View style={_styles.odWPrjmK}>
+      }) => <View style={_styles.sjpnuTpp}>
               <Image source={{
           uri: item.image
-        }} style={_styles.cuMIPbLK} />
-              <Text style={_styles.xrrCThCa}>{item.name}</Text>
-              <TouchableOpacity onPress={() => handleRemove(item)} style={_styles.rUbsmYrK}>
-                <Text style={_styles.DselXIqj}>Remove</Text>
+        }} style={_styles.vBoCiLjP} />
+              <Text style={_styles.YqTBFhne}>{item.name}</Text>
+              <TouchableOpacity onPress={() => handleRemove(item)} style={_styles.wDZvOIBQ}>
+                <Text style={_styles.BlqszAHp}>Remove</Text>
               </TouchableOpacity>
             </View>} />
         <Button title="Add Members" onPress={handleAdd} />
-        <TextInput placeholder="Search for users" style={_styles.xJxbHOeu} />
+        <TextInput placeholder="Search for users" style={_styles.yepfdLKd} />
         <Button title="Leave" onPress={handleLeave} color="red" />
       </View>
     </SafeAreaView>;
@@ -70,48 +70,48 @@ const GroupScreen = () => {
 export default GroupScreen;
 
 const _styles = StyleSheet.create({
-  uSDTIglc: {
+  tZnXNMgK: {
     flex: 1,
     backgroundColor: "#fff"
   },
-  vwkjcBdQ: {
+  dTxDHYvH: {
     padding: 20
   },
-  zQXDPwWM: {
+  NskGqDSz: {
     fontSize: 24,
     fontWeight: "bold"
   },
-  ASOgXBBf: {
+  lVBclsZK: {
     width: "100%",
     height: 200
   },
-  HJecRFug: {
+  apQAoqoB: {
     fontSize: 18,
     fontWeight: "bold"
   },
-  oqUgdBSf: {
+  vHfBTCjd: {
     fontSize: 16
   },
-  odWPrjmK: {
+  sjpnuTpp: {
     flexDirection: "row",
     alignItems: "center",
     marginVertical: 10
   },
-  cuMIPbLK: {
+  vBoCiLjP: {
     width: 50,
     height: 50,
     borderRadius: 25
   },
-  xrrCThCa: {
+  YqTBFhne: {
     marginLeft: 10
   },
-  rUbsmYrK: {
+  wDZvOIBQ: {
     marginLeft: "auto"
   },
-  DselXIqj: {
+  BlqszAHp: {
     color: "red"
   },
-  xJxbHOeu: {
+  yepfdLKd: {
     height: 40,
     borderColor: "gray",
     borderWidth: 1,
